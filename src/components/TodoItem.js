@@ -1,5 +1,6 @@
-import React, { useState } from "react";
-import "../styles/todoItem.css";
+import React, { useState } from 'react';
+import '../styles/todoItem.css';
+
 export default function TodoItem({
   itemProp,
   handleChange,
@@ -12,19 +13,19 @@ export default function TodoItem({
     setEditing(true);
   };
 
-  let viewMode = {};
-  let editMode = {};
+  const viewMode = {};
+  const editMode = {};
   if (editing) {
-    viewMode.display = "none";
+    viewMode.display = 'none';
   } else {
-    editMode.display = "none";
+    editMode.display = 'none';
   }
 
-  const handleUpdatedDone = (e) =>{
+  const handleUpdatedDone = (e) => {
     if (e.key === 'Enter') {
-      setEditing(false)
+      setEditing(false);
     }
-  }
+  };
 
   return (
     <li className="item">
@@ -34,8 +35,12 @@ export default function TodoItem({
           checked={itemProp.completed}
           onChange={() => handleChange(itemProp.id)}
         />
-        <button onClick={editTodo}>Edit</button>
-        <button onClick={() => delTodo(itemProp.id)}>Delete</button>
+        <button type="button" onClick={editTodo}>
+          Edit
+        </button>
+        <button type="button" onClick={() => delTodo(itemProp.id)}>
+          Delete
+        </button>
         {itemProp.title}
       </div>
       <input

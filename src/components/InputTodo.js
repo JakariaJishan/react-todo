@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
 function InputTodo({ addTodoItem }) {
-  const [title, settitle] = useState("");
-  const [message, setMessage] = useState("");
+  const [title, settitle] = useState('');
+  const [message, setMessage] = useState('');
 
   const handleChange = (e) => {
     settitle(e.target.value);
@@ -12,10 +12,10 @@ function InputTodo({ addTodoItem }) {
     e.preventDefault();
     if (title.trim()) {
       addTodoItem(title);
-      settitle("");
-      setMessage("");
+      settitle('');
+      setMessage('');
     } else {
-      setMessage("please add item");
+      setMessage('please add item');
     }
   };
 
@@ -27,11 +27,11 @@ function InputTodo({ addTodoItem }) {
           placeholder="Add Todo..."
           value={title}
           onChange={handleChange}
-          className='input-text'
+          className="input-text"
         />
-        <button className='input-submit'>Submit</button>
+        <button type="button" className="input-submit">Submit</button>
       </form>
-      <span className='submit-warning'>{message}</span>
+      <span className="submit-warning">{message}</span>
     </>
   );
 }
