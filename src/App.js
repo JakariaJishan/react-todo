@@ -1,12 +1,12 @@
  /* eslint-disable */
 
-import './App.css';
-import TodosLogic from './components/TodosLogic';
+ import TodoApp from './components/TodoApp';
+import './styles/app.css';
 
 function App() {
   return (
     <div>
-      <TodosLogic/>
+      <TodoApp/>
     </div>
   );
 }
