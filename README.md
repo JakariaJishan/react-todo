@@ -2,7 +2,7 @@
 
 <div align="center">
    <h1><b>React ToDo App</b></h1>
-  <!-- <img src="./src/assets/readme_img.png" alt="todo image" width="100%" /> -->
+   <img src="https://user-images.githubusercontent.com/73704727/224339752-52660a30-f8df-4ed4-bb95-3c5f44ed4be0.png" alt="todo image" width="100%" /> 
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -78,7 +78,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [under_construction](under_construction)
+- [Live Demo](https://react-todo-9vo7.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
